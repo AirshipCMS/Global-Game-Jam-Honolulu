@@ -11,19 +11,19 @@
 // (thus the convention for an outer container and inner block).
 
 .container{
-  background-color: #EEEEEE;
+  // background-color: #EEEEEE;
 
   &.header-container{
     
   }
 
   &.footer-container{
-    background-color: #222222;
+    // background-color: #222222;
   }
 }
 
 .block{
-  border: 1px dashed #CCCCCC;
+  // border: 1px dashed #CCCCCC;
 
   &.header-block{
     border: 0;
@@ -32,4 +32,248 @@
   &.footer-block{
     border: 0;
   }
+}
+
+h1, h2, h3{
+  text-align: left;
+  max-width: 710px;
+  margin: auto;
+  font-family: 'Patrick Hand', sans-serif;
+}
+
+h1{
+  font-size: 46px;
+  line-height: 46px;
+  margin-bottom: 20px;
+  color: #F7960F;
+}
+
+h2{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 32px;
+  color: #24AEB5;
+}
+
+h3{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 22px;
+  color: #F7960F;
+}
+
+p + h1,
+p + h2{
+  margin-top: 30px;
+}
+
+p + h3{
+  margin-top: 20px;
+}
+
+h1 + h2{
+  margin-top: -10px;
+}
+
+h2 + h3{
+  margin-top: 10px;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  max-width: 710px;
+  margin: auto;
+  color: #555;
+
+  + p{
+    margin-top: 20px;
+  }
+}
+
+a{
+  color: #24AEB5;
+
+  &:hover{
+    color: darken(#24AEB5, 20%);
+  }
+}
+
+.block.info-block{
+  padding: 30px 6%;
+
+  &.homepage-block{
+    padding-top: 0;
+
+    @include breakpoint(large){
+      padding: 50px 0 70px;
+    }
+  }
+
+  @include breakpoint(large){
+    padding: 50px 0 70px;
+  }
+}
+
+.block img{
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+table{
+  display: block;
+  margin: auto;
+  max-width: 710px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: 'Open Sans', sans-serif;
+  
+  th{
+    text-align: left;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #888;
+  }
+
+  tr{
+    background-color: #F8F8F8;
+
+    &:nth-child(2n+1){
+      background-color: #FFF;
+    }
+  }
+
+  td{
+    padding: 5px;
+    padding-right: 20px;
+  }
+}
+
+.workshops{
+  border: 1px solid #F7960F;
+  background-color: lighten(#F7960F, 40%);
+  padding: 20px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  max-width: 710px;
+
+  h1{
+    margin-top: 0;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  a{
+    color: darken(#F7960F, 5%);
+
+    &:hover{
+      color: darken(#F7960F, 10%);
+    }
+  }
+}
+
+header{
+  background-color: #333;
+  padding: 10px 0 1px;
+
+  @include breakpoint(medium){
+    padding: 0;
+  }
+
+  nav{
+
+    ul{
+      text-align: center;
+
+      li{
+        display: inline-block;
+        list-style-type: none;
+        
+        &.active{
+
+          a{
+            color: #F7960F;
+
+          }
+        }
+
+        a{
+          font-family: 'Patrick Hand', sans-serif;
+          font-size: 22px;
+          color: #888;
+          padding: 0 10px;
+          display: block;
+
+          &:hover{
+            color: #F7960F;
+          }
+
+          @include breakpoint(medium){
+            padding: 10px 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+a.button{
+  display: block;
+  padding: 15px 30px;
+  font-family: 'Patrick Hand', sans-serif;
+  font-size: 28px;
+  background-color: #F7960F;
+  border-radius: 2px;
+  border: 0;
+  border-bottom: 4px solid darken(#F7960F, 10%);
+  margin-bottom: 0;
+
+  @include breakpoint(medium){
+    display: inline-block;
+  }
+
+  &:hover{
+    background-color: darken(#F7960F, 5%);
+    border-bottom: 1px solid darken(#F7960F, 15%);
+    margin-bottom: 3px;
+    transform: translateY(3px);
+  }
+}
+
+.theme{
+  background-color: #DDD;
+  padding: 30px;
+  border: 1px dashed #AAA;
+  margin: auto;
+  margin-bottom: 30px;
+  max-width: 710px;
+
+  h1{
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 100px;
+    border: 1px dashed #888;
+    background-color: #EEEEEE;
+    border-radius: 100%;
+    color: #AAA;
+  }
+
+  h3{
+    text-align: center;
+    color: #AAA;
+  }
+}
+
+iframe{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  max-width: 100%;
 }

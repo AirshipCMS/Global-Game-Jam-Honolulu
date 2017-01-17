@@ -3111,17 +3111,189 @@ select {
 .no-js #responsive-menu {
   display: none; }
 
-.container {
-  background-color: #EEEEEE; }
-  .container.footer-container {
-    background-color: #222222; }
+.block.header-block {
+  border: 0; }
 
-.block {
-  border: 1px dashed #CCCCCC; }
-  .block.header-block {
-    border: 0; }
-  .block.footer-block {
-    border: 0; }
+.block.footer-block {
+  border: 0; }
+
+h1, h2, h3 {
+  text-align: left;
+  max-width: 710px;
+  margin: auto;
+  font-family: 'Patrick Hand', sans-serif; }
+
+h1 {
+  font-size: 46px;
+  line-height: 46px;
+  margin-bottom: 20px;
+  color: #F7960F; }
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 32px;
+  color: #24AEB5; }
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 22px;
+  color: #F7960F; }
+
+p + h1,
+p + h2 {
+  margin-top: 30px; }
+
+p + h3 {
+  margin-top: 20px; }
+
+h1 + h2 {
+  margin-top: -10px; }
+
+h2 + h3 {
+  margin-top: 10px; }
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  max-width: 710px;
+  margin: auto;
+  color: #555; }
+  p + p {
+    margin-top: 20px; }
+
+a {
+  color: #24AEB5; }
+  a:hover {
+    color: #135c60; }
+
+.block.info-block {
+  padding: 30px 6%; }
+  .block.info-block.homepage-block {
+    padding-top: 0; }
+    @media print, screen and (min-width: 64em) {
+      .block.info-block.homepage-block {
+        padding: 50px 0 70px; } }
+  @media print, screen and (min-width: 64em) {
+    .block.info-block {
+      padding: 50px 0 70px; } }
+
+.block img {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+table {
+  display: block;
+  margin: auto;
+  max-width: 710px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: 'Open Sans', sans-serif; }
+  table th {
+    text-align: left;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #888; }
+  table tr {
+    background-color: #F8F8F8; }
+    table tr:nth-child(2n+1) {
+      background-color: #FFF; }
+  table td {
+    padding: 5px;
+    padding-right: 20px; }
+
+.workshops {
+  border: 1px solid #F7960F;
+  background-color: #feecd4;
+  padding: 20px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  max-width: 710px; }
+  .workshops h1 {
+    margin-top: 0;
+    font-size: 40px;
+    line-height: 40px; }
+  .workshops a {
+    color: #e58808; }
+    .workshops a:hover {
+      color: #cc7a07; }
+
+header {
+  background-color: #333;
+  padding: 10px 0 1px; }
+  @media print, screen and (min-width: 40em) {
+    header {
+      padding: 0; } }
+  header nav ul {
+    text-align: center; }
+    header nav ul li {
+      display: inline-block;
+      list-style-type: none; }
+      header nav ul li.active a {
+        color: #F7960F; }
+      header nav ul li a {
+        font-family: 'Patrick Hand', sans-serif;
+        font-size: 22px;
+        color: #888;
+        padding: 0 10px;
+        display: block; }
+        header nav ul li a:hover {
+          color: #F7960F; }
+        @media print, screen and (min-width: 40em) {
+          header nav ul li a {
+            padding: 10px 10px; } }
+
+a.button {
+  display: block;
+  padding: 15px 30px;
+  font-family: 'Patrick Hand', sans-serif;
+  font-size: 28px;
+  background-color: #F7960F;
+  border-radius: 2px;
+  border: 0;
+  border-bottom: 4px solid #cc7a07;
+  margin-bottom: 0; }
+  @media print, screen and (min-width: 40em) {
+    a.button {
+      display: inline-block; } }
+  a.button:hover {
+    background-color: #e58808;
+    border-bottom: 1px solid #b46b06;
+    margin-bottom: 3px;
+    transform: translateY(3px); }
+
+.theme {
+  background-color: #DDD;
+  padding: 30px;
+  border: 1px dashed #AAA;
+  margin: auto;
+  margin-bottom: 30px;
+  max-width: 710px; }
+  .theme h1 {
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 100px;
+    border: 1px dashed #888;
+    background-color: #EEEEEE;
+    border-radius: 100%;
+    color: #AAA; }
+  .theme h3 {
+    text-align: center;
+    color: #AAA; }
+
+iframe {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  max-width: 100%; }
 
 .logo {
   float: left;
@@ -3286,6 +3458,3 @@ select {
 .top-bar ul.menu li.active-nav a {
   background-color: #AAAAAA;
   color: #FFFFFF; }
-
-body {
-  background-color: green; }
