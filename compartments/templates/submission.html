@@ -23,29 +23,30 @@
 
         <h2>Sunday Jan 22</h2>
         <h3>Step 1: Fill out a short form!! (allow 5 min)</h3>
-        <form action="">
+        <form class="submission-form" data-abide novalidate>
           <label for="game_title">Game Title</label>
-          <input id="game_title" type="text" placeholder="Project Name">
+          <input id="game_title" class="form-required" required type="text" name="game_title" placeholder="Project Name">
 
           <label for="team_members">Team Members</label>
-          <input id="team_members" type="text" placeholder="Team Member, Team Member, Team Member...">
+          <input id="team_members" class="form-required" required type="text" name="team_members" placeholder="Team Member, Team Member, Team Member...">
 
           <label for="game_description">Game Description</label>
-          <textarea id="game_description" placeholder="Description"></textarea>
-          
+          <textarea id="game_description" class="form-required" required name="game_description" placeholder="Description"></textarea>
+
           <label for="live_url">Live URL (optional)</label>
           <div class="input-group">
             <span class="input-group-label">http://</span>
-            <input class="input-group-field" id="live_url" type="text" placeholder="projectname.airshipcms.io">
+            <input class="input-group-field" id="live_url" type="text" name="live_url" placeholder="projectname.airshipcms.io">
           </div>
-          
+
           <label for="github_url">Github URL (optional)</label>
           <div class="input-group">
             <span class="input-group-label">https://github.com/</span>
-            <input class="input-group-field" id="github_url" type="text" placeholder="username/repository">
+            <input class="input-group-field" id="github_url" type="text" name="github_url" placeholder="username/repository">
           </div>
 
-          <button type="submit">Submit</button>
+          <button type="submit" id="submit">Submit</button>
+          <div class="notification" style="display: none">Your game has been submitted!</div>
         </form>
 
         <h3>Step 2: Submit Your Game to GGJ Official (allow 1 hour)</h3>
