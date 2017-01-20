@@ -1,7 +1,11 @@
 <ul class="projects">
   {{#sort_list items sort="permalink" order="asc"}}
     <li class="project">
-      
+      <h2>{{fields.game_title}}</h2>
+      <p>{{fields.team_members}}</p>
+      {{#if fields.game_description}}<p class="game_description">{{fields.game_description}}</p>{{/if}}
+      {{#if fields.live_url}}<p><a href="http://{{fields.live_url}}" target="_blank">http://{{fields.live_url}}</a></p>{{/if}}
+      {{#if fields.github_url}}<p><a href="https://github.com/{{fields.github_url}}" target="_blank">https://github.com/{{fields.github_url}}</a></p>{{/if}}
     </li>
   {{/sort_list}}
 </ul>

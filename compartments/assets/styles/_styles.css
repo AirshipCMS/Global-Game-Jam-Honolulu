@@ -3162,6 +3162,8 @@ p {
   color: #555; }
   p + p {
     margin-top: 20px; }
+  p.secret {
+    color: #F7960F; }
 
 a {
   color: #24AEB5; }
@@ -3323,6 +3325,55 @@ form {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 30px; }
+
+label,
+.input-group-label {
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  color: #555; }
+
+input[type="text"], textarea,
+input.input-group-field {
+  font-family: 'Open Sans', sans-serif; }
+
+textarea {
+  min-height: 100px; }
+
+ul.projects {
+  list-style-type: none;
+  max-width: 710px;
+  margin: 0 auto;
+  padding: 10px 10px; }
+
+@media print, screen and (min-width: 64em) {
+  ul.projects {
+    display: flex;
+    flex-flow: row wrap; } }
+
+li.project {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #24AEB5;
+  padding: 15px 20px 20px;
+  margin-bottom: 10px;
+  border-radius: 2px; }
+
+@media print, screen and (min-width: 64em) {
+  ul.projects li.project {
+    flex: 0 0 48%;
+    margin-left: 1%;
+    margin-right: 1%; } }
+
+li.project p {
+  font-size: 14px;
+  line-height: 16px; }
+
+li.project p.game_description {
+  max-height: 129px;
+  overflow: hidden; }
+
+li.project p + p {
+  margin-top: 10px; }
 
 .logo {
   float: left;
