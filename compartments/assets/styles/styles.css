@@ -3602,6 +3602,14 @@ button {
     -webkit-transform: translateY(3px);
             transform: translateY(3px);
     cursor: pointer; }
+  a.button.clicked,
+  button.clicked {
+    background-color: #CCC;
+    border-bottom: 1px solid #AAA;
+    margin-bottom: 3px;
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+    cursor: pointer; }
 
 .theme {
   background-color: #DDD;
@@ -3689,15 +3697,12 @@ li.project {
   border-radius: 2px; }
 
 li.project:nth-child(3n+1) {
-  background-color: #F7960F; }
-
-li.project:nth-child(3n+2) {
   background-color: #9E5CBE; }
 
-li.project:nth-child(3n+3) {
+li.project:nth-child(3n+2) {
   background-color: #8FB843; }
 
-li.project:nth-child(3n+4) {
+li.project:nth-child(3n) {
   background-color: #24AEB5; }
 
 @media print, screen and (min-width: 64em) {
@@ -3732,6 +3737,15 @@ li.project p a {
 
 li.project p a:hover {
   opacity: 1; }
+
+p.notification {
+  font-family: 'Patrick Hand', sans-serif;
+  font-size: 22px;
+  margin-top: 5px;
+  background-color: #F7960F;
+  padding: 0 10px;
+  border-radius: 3px;
+  color: white; }
 
 .logo {
   float: left;
