@@ -147,8 +147,8 @@ table{
   }
 
   td{
-    padding: 5px;
-    padding-right: 20px;
+    padding: 15px 20px 15px 5px;
+    vertical-align: top;
   }
 }
 
@@ -221,11 +221,13 @@ header{
   }
 }
 
-a.button{
+a.button,
+button{
   display: block;
   padding: 15px 30px;
   font-family: 'Patrick Hand', sans-serif;
   font-size: 28px;
+  color: white;
   background-color: #F7960F;
   border-radius: 2px;
   border: 0;
@@ -236,11 +238,13 @@ a.button{
     display: inline-block;
   }
 
-  &:hover{
+  &:hover,
+  &:active{
     background-color: darken(#F7960F, 5%);
     border-bottom: 1px solid darken(#F7960F, 15%);
     margin-bottom: 3px;
     transform: translateY(3px);
+    cursor: pointer;
   }
 }
 
@@ -276,4 +280,30 @@ iframe{
   margin-top: 10px;
   margin-bottom: 20px;
   max-width: 100%;
+}
+
+.block ol, .block ul{
+  max-width: 710px;
+  margin: auto;
+  padding: 0;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.block ol li,
+.block ul li{
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  max-width: 710px;
+  margin: auto;
+  color: #555;
+  padding-left: 5px;
+}
+
+form{
+  max-width: 710px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
