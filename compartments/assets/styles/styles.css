@@ -3724,6 +3724,12 @@ li.project p {
   line-height: 17px;
   color: white; }
 
+li.project p.url {
+  font-size: 13px;
+  line-height: 17px;
+  color: white;
+  word-break: break-all; }
+
 li.project p.game_description {
   max-height: 120px;
   overflow: hidden; }
